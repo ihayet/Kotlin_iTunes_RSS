@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/rowLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/albumImageView"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/albumNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/albumNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="18sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumImageView"
+        app:layout_constraintBottom_toTopOf="@id/artistNameTextView"
+        app:layout_constraintStart_toEndOf="@id/albumImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginStart="3dp"
+        />
+
+    <TextView
+        android:id="@+id/artistNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@id/albumNameTextView"
+        app:layout_constraintBottom_toBottomOf="@id/albumImageView"
+        app:layout_constraintStart_toStartOf="@id/albumNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="10dp"
+
+    android:scrollbars="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/albumDetailsImageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+
+        android:layout_marginBottom="30dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="18sp"
+
+        android:text="Album"
+
+        app:layout_constraintTop_toBottomOf="@id/horizontalGuideline"
+        app:layout_constraintBottom_toTopOf="@id/albumDetailsArtistNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsNameTextView"
+
+        android:layout_marginStart="3dp"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="18sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsNameLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsNameLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginStart="3dp"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsArtistNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        android:text="Artist"
+
+        app:layout_constraintTop_toBottomOf="@id/albumDetailsNameLabel"
+        app:layout_constraintBottom_toTopOf="@id/albumDetailsReleaseDateLabel"
+        app:layout_constraintStart_toStartOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsArtistNameTextView"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsArtistNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsArtistNameLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsArtistNameLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsArtistNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsReleaseDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        android:text="Release"
+
+        app:layout_constraintTop_toBottomOf="@id/albumDetailsArtistNameLabel"
+        app:layout_constraintBottom_toTopOf="@id/albumDetailsGenresLabel"
+        app:layout_constraintStart_toStartOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsReleaseDateTextView"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsReleaseDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsReleaseDateLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsReleaseDateLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsReleaseDateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsGenresLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        android:text="Genres"
+
+        app:layout_constraintTop_toBottomOf="@id/albumDetailsReleaseDateLabel"
+        app:layout_constraintBottom_toTopOf="@id/albumDetailsAdvisoryLabel"
+        app:layout_constraintStart_toStartOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsGenresTextView"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsGenresTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsGenresLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsGenresLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsGenresLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsAdvisoryLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        android:text="Advisory"
+
+        app:layout_constraintTop_toBottomOf="@id/albumDetailsGenresLabel"
+        app:layout_constraintBottom_toTopOf="@id/albumDetailsCopyrightLabel"
+        app:layout_constraintStart_toStartOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsAdvisoryTextView"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsAdvisoryTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsAdvisoryLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsAdvisoryLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsAdvisoryLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsCopyrightLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        android:text="Copyright"
+
+        app:layout_constraintTop_toBottomOf="@id/albumDetailsAdvisoryLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/albumDetailsNameLabel"
+        app:layout_constraintEnd_toStartOf="@id/albumDetailsNameTextView"
+        />
+
+    <TextView
+        android:id="@+id/albumDetailsCopyrightTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toTopOf="@id/albumDetailsCopyrightLabel"
+        app:layout_constraintBottom_toBottomOf="@id/albumDetailsCopyrightLabel"
+        app:layout_constraintStart_toEndOf="@id/albumDetailsCopyrightLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

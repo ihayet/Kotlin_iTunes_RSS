@@ -1,0 +1,2 @@
+rootProject.name = "AppleMusic25"
+include ':app'
